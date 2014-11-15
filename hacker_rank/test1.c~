@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+long addDig(long num){
+    long sum=0;
+    while(num>=0){
+      sum+=num%10;
+      num/=10;
+    }
+    return sum;
+     
+}
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    long test_cases=0,num=0;
+    long i;
+    scanf("%ld",&test_cases);
+    printf("%ld",test_cases);
+    for(i=0;i<test_cases;i++){
+        printf("here");
+        scanf(" %ld%*ld",&num);
+        printf("here");
+        printf("%ld",num);
+        printf("%ld",addDig(num));
+    }
+    return 0;
+}
+
