@@ -1,0 +1,169 @@
+<id name=aboutsmartit> 
+<Name>Paul Treffers</Name> 
+</Email>?</Email>
+?</Bio> 
+?</Blog> 
+?</Company> 
+?</Hirable> 
+<Location>Leiden, The Netherlands</Location> 
+?</repos> 
+?</Updated> 
+<Languages><lang0>Python:1</lang>
+</Languages>
+</id> 
+<Skills>Information Security, Security, CISSP, ISO 27001, Cloud Computing, Infrastructure, Identity Management, Information Security..., Citrix, Active Directory, System Administration, Consulting, Computer Security, Cloud Security, Virtualization, Requirements Analysis, Software Development, IT Strategy, IT Management, Microsoft Technologies, Solution Architecture, VMware, Business Continuity, IT Service Management, Security Awareness, ICT, Disaster Recovery, Consultants, Data Center, Security Operations, Access Control, SANS GSEC, Apple Macintosh, Mac OS X, High Performance Teams, Consultancy, NEN 7510, IT arch, Data Security, Security Assessments, ICT Security, Information Security..., Basketball</Skills>
+<Educa>
+<Course>GIAC Security Incident Handler, </Course>
+<School>SANS Amsterdam 2013</School>
+<Specialization>Information Security</Specialization>
+</Educa>
+<Educa>
+<Course>GWAPT, </Course>
+<School>SANS Amsterdam 2012</School>
+<Specialization>Information Security</Specialization>
+</Educa>
+<Educa>
+<Course>CISSP, </Course>
+<School>CISSP, ISC2</School>
+<Specialization>Information Security</Specialization>
+</Educa>
+<Educa>
+<Course>GSEC, </Course>
+<School>SANS, GSEC</School>
+<Specialization>Security Essentials Bootcamp London 2011</Specialization>
+</Educa>
+<Educa>
+<Course>Yes, </Course>
+<School>IT related</School>
+<Specialization>IT</Specialization>
+</Educa>
+<Educa>
+<Course>N/A, </Course>
+<School>De Baak</School>
+<Specialization>People Management</Specialization>
+</Educa>
+<Educa>
+<Course>?</Course>
+<School>In house training and certification</School>
+<Specialization>IT</Specialization>
+</Educa>
+<Educa>
+<Course>Yes, </Course>
+<School>Software Training</School>
+<Specialization>Citrix Certified Administrator</Specialization>
+</Educa>
+<Educa>
+<Course>?</Course>
+<School>ISI, Leiden</School>
+<Specialization>Information Technology</Specialization>
+</Educa>
+<Educa>
+<Course>?</Course>
+<School>Louise de Coligny, Leiden</School>
+<Specialization>?</Specialization>
+</Educa>
+<Educa>
+<Course>?</Course>
+<School>Rudolf Steiner</School>
+<Specialization>?</Specialization>
+</Educa>
+<Educa>
+<Course>?</Course>
+<School>Rudolf Steiner Leiden</School>
+<Specialization>?</Specialization>
+</Educa>
+<Educa>
+<Course>?</Course>
+<School>Leiden University</School>
+<Specialization>colloquium doctum Leiden University</Specialization>
+</Educa>
+<Jobs>
+<Title>Security Architect</Title>
+<Duration>November 2013Present</Duration>
+<Place>Amsterdam Area, Netherlands</Place>
+<Title>Security Architect</Title>
+</Jobs>
+<Jobs>
+<Title>Division Security Officer</Title>
+<Duration>January 2013November 2013</Duration>
+<Place>Amsterdam</Place>
+<Title>Division Security Officer</Title>
+</Jobs>
+<Jobs>
+<Title>Information Security Officer</Title>
+<Duration>June 2011January 2013</Duration>
+<Place>Leiden</Place>
+<Title>Information Security Officer</Title>
+</Jobs>
+<Jobs>
+<Title>Information Security Architect</Title>
+<Duration>June 2011January 2013</Duration>
+<Place>Leiden, The Netherladns</Place>
+<Title>Information Security Architect</Title>
+</Jobs>
+<Jobs>
+<Title>Global ICT Systems Management Manager</Title>
+<Duration>March 2006August 2011</Duration>
+<Place>?</Place>
+<Title>Global ICT Systems Management Manager</Title>
+</Jobs>
+<Jobs>
+<Title>Global Systems Management Services Manager</Title>
+<Duration>March 2006November 2007</Duration>
+<Place>?</Place>
+<Title>Global Systems Management Services Manager</Title>
+</Jobs>
+<Jobs>
+<Title>Core Services Engineer</Title>
+<Duration>September 20052006</Duration>
+<Place>?</Place>
+<Title>Core Services Engineer</Title>
+</Jobs>
+<Jobs>
+<Title>Senior System Engineer</Title>
+<Duration>April 1998September 2005</Duration>
+<Place>?</Place>
+<Title>Senior System Engineer</Title>
+</Jobs>
+<Jobs>
+<Title>chairman, board member</Title>
+<Duration>August 1996December 2000</Duration>
+<Place>?</Place>
+<Title>chairman, board member</Title>
+</Jobs>
+<Jobs>
+<Title>Co-Author Web Based Techniques</Title>
+<Duration>July 1998August 1998</Duration>
+<Place>?</Place>
+<Title>Co-Author Web Based Techniques</Title>
+</Jobs>
+<Jobs>
+<Title>Consultant</Title>
+<Duration>May 1994April 1998</Duration>
+<Place>?</Place>
+<Title>Consultant</Title>
+</Jobs>
+<Jobs>
+<Title>Technical Support Engineer</Title>
+<Duration>19901995</Duration>
+<Place>?</Place>
+<Title>Technical Support Engineer</Title>
+</Jobs>
+<Jobs>
+<Title>Technical Support Engineer</Title>
+<Duration>April 1992January 1994</Duration>
+<Place>?</Place>
+<Title>Technical Support Engineer</Title>
+</Jobs>
+<Jobs>
+<Title>Software Engineer</Title>
+<Duration>19901992</Duration>
+<Place>?</Place>
+<Title>Software Engineer</Title>
+</Jobs>
+<Jobs>
+<Title>ICT medewerker</Title>
+<Duration>April 19891990</Duration>
+<Place>?</Place>
+<Title>ICT medewerker</Title>
+</Jobs>
