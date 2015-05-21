@@ -84,3 +84,4 @@ if __name__ == "__main__":
         pylab.draw()
         import time
         time.sleep(10)
+        this is not working. The third point calculation is wrong
