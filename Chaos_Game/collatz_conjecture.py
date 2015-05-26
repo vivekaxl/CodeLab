@@ -9,7 +9,7 @@ def half_or_triple_plus_one(number):
         return int((3 * number) + 1)
 
 def main_loop():
-    number = int(100 + random() * (1000 - 100))
+    number = int(1000 + random() * (10000 - 1000))
     points = []
     count = 0
 
