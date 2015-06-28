@@ -1,5 +1,5 @@
 #__author__ = 'FuWei'
-from __future__ import print_function, division
+from __future__ import  division
 import sys
 import pdb
 from os import listdir
@@ -121,16 +121,34 @@ def new_header(f = "./data"):
     import sys
 
     all_files = [ (join(f,path)) for path in listdir(f) if isfile(join(f, path))]
-    for one in all_files:
-        f = open(one, 'rb')
+    for filename in all_files:
+        f = open(filename, 'rb')
+        mod_file = []
         try:
             reader = csv.reader(f)
             for i,row in enumerate(reader):
-                try:
-                    print(i, len(row))
-                except:
-                    print(row)
-                    pass
+                if i == 0:
+                    mod_file.append(row)
+                    continue # first row is the header
+                print(i, len(row))
+                new_row = []
+                for e in row:
+
+                    try:
+                        one, two = e.split("-") # Values are ranges
+                    except ValueError: # last column is a experience column
+                        new_row.append(float(e))
+                        continue
+                    if one.replace(" ", "") == "ninf": one = -1 # ninf represents -infinity
+                    else: one = float(one)
+                    two = float(two)
+                    new_row.append((one-two)/2)
+                mod_file.append(new_row)
+            print "Number of rows in the file: ", len(mod_file)
+            fp = open(filename+"_mod", 'w')
+            a = csv.writer(fp, delimiter=',')
+            a.writerows(mod_file)
+            fp.close()
         finally:
             f.close()
 
