@@ -1,6 +1,8 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
 from copy import deepcopy
-def det(matrix):
-    return (matrix[0][0] * matrix[1][1]) - (matrix[0][1] * matrix[1][0])
+from decimal import Decimal
+def detval(matrix):
+    return Decimal(matrix[0][0] * matrix[1][1]) - Decimal(matrix[0][1] * matrix[1][0])
 
 def cominor(m, number):
     matrix = deepcopy(m)
@@ -13,22 +15,31 @@ def cominor(m, number):
 
 def recdet(arr):
     if len(arr) <= 2:
-        return det(arr)
+        return detval(arr)
     else:
         first_line = arr[0]
-        return sum([(-1)**fl * recdet(cominor(arr, fl)) for fl, _ in enumerate(first_line)])
+        return sum([((-1)**fl) * recdet(cominor(arr, fl)) for fl, _ in enumerate(first_line)])
 
-def getx(number):
-    need to optimize this
-    x = 1
-    while number ** x % (10**9 + 7) != 1:
-        x += 1
-    print number ** x
-    return x
 
-count = 1
-dimension = 3
-arr = [[(dimension * i) + (j+1) for j in xrange(dimension)] for i in xrange(dimension)]
-# print recdet(arr)
-
-print getx(600**-1)
+def create_matrix(X, Y):
+    lenX = len(X)
+    lenY = len(Y)
+    matrix = [[0 for _ in xrange(lenX)] for _ in xrange(lenY)]
+    for x in xrange(lenX):
+        for y in xrange(lenY):
+            matrix[x][y] = Decimal((X[x] + Y[y])) ** -1
+    return matrix
+            
+p = 1000000007
+for _ in xrange(int(input())):
+    print "boom"
+    bl = raw_input()
+    X = [Decimal(x) for x in raw_input().split()]
+    Y = [Decimal(x) for x in raw_input().split()]
+    matrix = create_matrix(X, Y)
+    import numpy
+    print ">> ", numpy.linalg.det(matrix)
+    det = recdet(matrix) 
+    print det
+    print pow(int(det ** -1), p-2, p)
+    
