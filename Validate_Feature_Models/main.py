@@ -94,29 +94,29 @@ def validate_x264(filename="./Data/X264_AllMeasurements.csv"):
 def validate_SQL(filename="./Data/SQL_AllMeasurements.csv"):
     def validate(solution):
         print solution
-        # if solution[0] != 1:
-        #     print "1"
-        #     return False
+
         indexes1 = [3,4,5,6]
         if solution[2] == 1 and sum([solution[i] for i in indexes1]) != 1:
             print "3"
             return False
-        if solution[7] != 1:
+        indexes2 = [25, 26]
+        if solution[24] == 1 and sum([solution[i] for i in indexes2]) != 1:
             print "4"
             return False
-        if solution[10] != 1:
+        indexes3 = [28, 29, 30]
+        if solution[27] == 1 and sum(solution[i] for i in indexes3) != 1:
             print "5"
             return False
-        if solution[13] != 1:
+        indexes4 = [32, 33]
+        if solution[31] == 1 and sum(solution[i] for i in indexes4) != 1:
             print "6"
             return False
-        if solution[23] != 1:
+        indexes5 = [35, 36, 37, 38]
+        if solution[34] == 1 and sum(solution[i] for i in indexes5) != 1:
             print "7"
             return False
-        if solution[24] != 1 or solution[27] != 1 or solution[31] != 1 or solution[34] != 1:
-            print "8"
-            return False
         return True
+
 
     f = open(filename, "r")
     for i,line in enumerate(f):
