@@ -38,19 +38,23 @@ def validate_bdbc(filename="./Data/BDBC_AllMeasurements.csv"):
 def validate_bdbj(filename="./Data/BDBJ_AllMeasurements.csv"):
     def validate(solution):
         if sum(solution) == 0: return False
-        if solution[0] != 1:return False
-        if solution[1] != 1:return False
+        if solution[0] != 1: return False
+        if solution[1] != 1: return False
         if solution[2] != 1: return False
-        if sum([solution[2], solution[3]]) == 0:return False
-        if solution[4] == 1 and solution[5] != 1 and solution[6] != 1:return False
-        if solution[6] == 1 and sum([solution[7], solution[8]]) != 1:return False
-        if solution[10] != 1:return False
-        if solution[10] == 1 and sum([solution[11], solution[12]]) == 0:return False
-        if solution[13] != 1:return False
-        if solution[14] != 1:return False
-        if solution[19] == 1 and solution[17] != 1:return False
-        if solution[16] != 1 and solution[17] != 1 and solution[18] != 1:return False
-        if solution[20] == 1 and solution[21] != 1 and solution[22] != 1 and sum([solution[23], solution[24]]) != 1:return False
+        if sum([solution[3], solution[4]]) != 1: return False
+        if solution[4] == 1 and solution[5] != 1: return False
+        if solution[4] == 1 and solution[6] != 1: return False
+        if solution[6] == 1 and sum([solution[7], solution[8]]) != 1: return False
+        if solution[10] != 1: return False
+        if solution[10] == 1 and sum([solution[11], solution[12]]) == 0: return False
+        if solution[13] != 1: return False
+        if solution[14] != 1: return False
+        if solution[19] == 1 and solution[17] != 1: return False
+        if solution[16] == 1 and solution[17] != 1: return False
+        if solution[16] == 1 and solution[18] != 1: return False
+        if solution[20] == 1 and solution[21] != 1: return False
+        if solution[20] == 1 and solution[22] != 1: return False
+        if solution[22] == 1 and sum([solution[23], solution[24]]) != 1: return False
         return True
 
     f = open(filename, "r")
@@ -96,25 +100,15 @@ def validate_SQL(filename="./Data/SQL_AllMeasurements.csv"):
         print solution
 
         indexes1 = [3,4,5,6]
-        if solution[2] == 1 and sum([solution[i] for i in indexes1]) != 1:
-            print "3"
-            return False
+        if solution[2] == 1 and sum([solution[i] for i in indexes1]) != 1: return False
         indexes2 = [25, 26]
-        if solution[24] == 1 and sum([solution[i] for i in indexes2]) != 1:
-            print "4"
-            return False
+        if solution[24] == 1 and sum([solution[i] for i in indexes2]) != 1: return False
         indexes3 = [28, 29, 30]
-        if solution[27] == 1 and sum(solution[i] for i in indexes3) != 1:
-            print "5"
-            return False
+        if solution[27] == 1 and sum(solution[i] for i in indexes3) != 1: return False
         indexes4 = [32, 33]
-        if solution[31] == 1 and sum(solution[i] for i in indexes4) != 1:
-            print "6"
-            return False
+        if solution[31] == 1 and sum(solution[i] for i in indexes4) != 1: return False
         indexes5 = [35, 36, 37, 38]
-        if solution[34] == 1 and sum(solution[i] for i in indexes5) != 1:
-            print "7"
-            return False
+        if solution[34] == 1 and sum(solution[i] for i in indexes5) != 1: return False
         return True
 
 
