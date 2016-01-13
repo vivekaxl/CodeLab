@@ -10,23 +10,27 @@ fig = plt.figure()
 ax = fig.add_subplot(111)
 
 # gale
-list_gale = [[float(x) for x in l.split(",")[-2:]] for l in open("./Data/gale4_dtlz1_7_3.csv").readlines() ]
-list_nsga2 = [[float(x) for x in l.split(",")[-2:]] for l in open("./Data/nsga2_dtlz1_7_3.csv").readlines()]
+list_nsga2 = [[float(x) for x in l.split(",")[-2:]] for l in open("./Data/nsgaii_zdt1.csv").readlines() ]
+list_spea2 = [[float(x) for x in l.split(",")[-2:]] for l in open("./Data/spea2_zdt1.csv").readlines()]
+list_gale = [[float(x) for x in l.split(",")[-2:]] for l in open("./Data/gale_zdt1.csv").readlines()]
 
-print list_gale[0]
-xs = [l[0] for l in list_gale]
-ys = [l[1] for l in list_gale]
-# zs = [l[2] for l in list_gale]
-ax.scatter(xs, ys, c='r', marker='o')
 
 xs = [l[0] for l in list_nsga2]
 ys = [l[1] for l in list_nsga2]
-# zs = [l[2] for l in list_nsga2]
+ax.scatter(xs, ys, c='r', marker='o')
+
+xs = [l[0] for l in list_spea2]
+ys = [l[1] for l in list_spea2]
 ax.scatter(xs, ys, c='b', marker='^')
 
-ax.set_xlabel('X Label')
-ax.set_ylabel('Y Label')
-# ax.set_zlabel('Z Label')
+xs = [l[0] for l in list_gale]
+ys = [l[1] for l in list_gale]
+ax.scatter(xs, ys, c='g', marker='x')
+
+ax.set_xlabel('First Objective')
+ax.set_ylabel('Second Objective')
+
+plt.title("ZDT1")
 
 # plt.show()
 plt.savefig("zdt1.png")
